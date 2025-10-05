@@ -1,0 +1,191 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #150e21;
+    display: flex;
+    justify-content: center;
+}
+main{
+    border: 1px solid white;
+    padding: 0px;
+    margin: 0px;
+    width: 60vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.header {
+    border: 1px solid white;
+    margin: 10px;
+}
+section.header > h1 {
+    color: orange;
+    padding: 10px;
+    border: 1px solid white;
+    /*colocar texto*/
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+section.header > p {
+    color: white;
+    text-align: center;
+}
+
+section.numeros {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 1px solid white;
+    width: 90%;
+}
+section.numeros > div.stage-active {
+    background-color: orange;
+    font-size: 200%;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.numeros > div.stage {
+    background-color: rgb(55 65 81 / var(--tw-bg-opacity, 1));
+    width: 30px;
+    height: 30px;
+    font-size: 200%;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.roleta {
+    border: 1px solid white;
+    width: 90%;
+    display: grid;
+    margin: 5px;
+    padding: 5px;
+    grid-template-areas: 
+    'h2 resultado'
+    'roleta resultado'
+    'botao botao'
+    ;
+    
+}
+
+section.roleta > div {
+    grid-area: h2;
+    border: 1px solid white;
+}
+
+section.roleta > div > h2 {
+    color: yellow;
+    border: 1px solid white;
+    margin: 5px;
+    padding: 5px;
+
+}
+section.roleta > div > p {
+    color: white;
+    border: 1px solid white;
+    margin: 5px;
+}
+section.roleta > div.circulo {
+    margin-top: 10px;
+    border: 1px solid white;
+    grid-area: roleta;
+    width: 350px;
+    height: 350px;
+    margin-left: 25px;
+}
+
+section.roleta > div.resultado-card {
+    border: 1px solid white;
+    grid-area: resultado;
+    width: 320px;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+section.roleta > div.gira-roleta {
+    grid-area: botao;
+    border: 1px solid white;
+    margin: 5px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section.opções
+
+section.roleta > div.resultado-card > div.resultado1 > h3 {
+    color: rgb(250 204 21 / var(--tw-text-opacity, 1));
+}
+section.roleta > div.resultado-card > div.resultado2 > h3 {
+    color: rgb(96 165 250 / var(--tw-text-opacity, 1));
+}
+section.roleta > div.resultado-card > div.resultado3 > h3 {
+    color: rgb(19, 193, 19);
+}
+section.roleta > div.resultado-card > div.resultado4 {
+    color: rgb(192 132 252 / var(--tw-text-opacity, 1));
+}
+section.roleta > div.resultado-card > div.resultado5 {
+    color: rgb(244 114 182 / var(--tw-text-opacity, 1));
+}
+section.roleta > div.resultado-card > div.resultado6{
+        color: rgb(129 140 248 / var(--tw-text-opacity, 1));
+}
+
+section.opções {
+    border: 1px solid white;
+    width: 92%;
+    border-radius: 10px;
+}
+section.opções > ul > li > span.span1 {
+    color: #e74c3c;
+}
+
+section.opções > ul > li > span.span2{
+    color: #9b59b6;
+}
+
+section.opções > ul > li > span.span3 {
+    color: #3498db
+}
+
+section.opções > ul > li > span.span4 {
+     color: #2ecc71
+}
+
+section.opções > ul > li > span.span5 {
+    color: #f1c40f
+}
+
+section.opções > ul > li > span.span6 {
+    color: #1abc9c
+}
+
+section.opções > ul > li > span.span7 {
+    color: #e67e22
+}
+
+section.opções > ul > li > span.span8 {
+    color: #34495e
+}
+
+section.opções > ul > li > span.span9 {
+    color: #16a085
+}
+
+section.opções > ul > li > span.span10 {
+    color: #d35400
+}
+
+section.opções > ul > li > span.span11 {
+    color: #8e44ad
+}
