@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #150e21;
+    background-color: #1a1a2e;
     display: flex;
     justify-content: center;
 }
@@ -28,10 +28,13 @@ section.header > h1 {
     margin-left: 10px;
     margin-right: 10px;
     text-align: center;
+    font-size: 2.25rem;
+    
 }
 section.header > p {
     color: white;
     text-align: center;
+    font-size: 1.125rem;
 }
 
 section.numeros {
@@ -40,6 +43,9 @@ section.numeros {
     justify-content: space-around;
     border: 1px solid white;
     width: 90%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 300px;
 }
 section.numeros > div.stage-active {
     background-color: orange;
@@ -64,6 +70,7 @@ section.numeros > div.stage {
     align-items: center;
 }
 section.roleta {
+    margin-top: 20px;
     border: 1px solid white;
     width: 90%;
     display: grid;
@@ -72,7 +79,7 @@ section.roleta {
     grid-template-areas: 
     'h2 resultado'
     'roleta resultado'
-    'botao botao'
+    'botao resultado'
     ;
     
 }
@@ -80,27 +87,29 @@ section.roleta {
 section.roleta > div {
     grid-area: h2;
     border: 1px solid white;
+    margin: 5px;
+    border-radius: 10px;
+    background-color: rgb(31 41 55)
+    
 }
 
 section.roleta > div > h2 {
     color: yellow;
-    border: 1px solid white;
-    margin: 5px;
-    padding: 5px;
-
+    text-align: center;
 }
+
 section.roleta > div > p {
     color: white;
-    border: 1px solid white;
-    margin: 5px;
+    text-align: center;
 }
+
 section.roleta > div.circulo {
-    margin-top: 10px;
     border: 1px solid white;
     grid-area: roleta;
     width: 350px;
     height: 350px;
     margin-left: 25px;
+    margin-top: 20px;
 }
 
 section.roleta > div.resultado-card {
@@ -109,36 +118,64 @@ section.roleta > div.resultado-card {
     width: 320px;
     border-radius: 10px;
     padding-left: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
 }
+
+
 section.roleta > div.gira-roleta {
     grid-area: botao;
     border: 1px solid white;
-    margin: 5px;
+    margin-left: 45px;
+    margin-bottom: 20px;
     width: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #1a1a2e;
+    border: none;
+    
+
+}
+section.roleta > div.gira-roleta > input {
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 20px ;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.2rem;
+    
 }
 
-section.opções
 
+section.roleta > div.resultado-card > div.header > h2 {
+     color: rgb(250 204 21);
+     font-size: 2rem;
+     text-align: center;
+}
 section.roleta > div.resultado-card > div.resultado1 > h3 {
-    color: rgb(250 204 21 / var(--tw-text-opacity, 1));
+    color: rgb(250 204 21);
 }
+
 section.roleta > div.resultado-card > div.resultado2 > h3 {
-    color: rgb(96 165 250 / var(--tw-text-opacity, 1));
+    color: rgb(96 165 250);
+    font-size: 1.2rem;
 }
 section.roleta > div.resultado-card > div.resultado3 > h3 {
     color: rgb(19, 193, 19);
+    font-size: 1.2rem;
 }
 section.roleta > div.resultado-card > div.resultado4 {
-    color: rgb(192 132 252 / var(--tw-text-opacity, 1));
+    color: rgb(192 132 252);
+    font-size: 1.2rem;
 }
 section.roleta > div.resultado-card > div.resultado5 {
     color: rgb(244 114 182 / var(--tw-text-opacity, 1));
+    font-size: 1.2rem;
 }
 section.roleta > div.resultado-card > div.resultado6{
-        color: rgb(129 140 248 / var(--tw-text-opacity, 1));
+    color: rgb(129 140 248 / var(--tw-text-opacity, 1));
+    font-size: 1.2rem;
 }
 
 section.opções {
